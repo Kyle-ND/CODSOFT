@@ -63,15 +63,14 @@ class TODO():
             print("Here are your Tasks: ")
             self.display_tasks()
             task_to_edit = input("What task would you like to edit: ").title()
-            print(f"What would you like to change '{task_to_edit}' to ")
+            print(f"What would you like to change '{task_to_edit}' to ?")
             new_task = input(": ")
             with open("tasks.txt") as f:
                 list_of_tasks = f.read()
-                print(list_of_tasks)
                 
 
                 with open('tasks.txt','w') as file:
-                    file.write(list_of_tasks.replace(f"{task_to_edit}",f"{new_task}\n"))
+                    file.write(list_of_tasks.replace(f"{task_to_edit}",f"{new_task}"))
                     print("Done")
 
             self.display_tasks()
