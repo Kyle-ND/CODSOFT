@@ -26,10 +26,14 @@ def main():
 
         elif response == "3":
             os.system("cls")
-            Lis.edit_task()
+            Lis.remove_task()
             os.system("cls")
 
         elif response == "4":
+            os.system("cls")
+            Lis.edit_task()
+
+        elif response == "5":
             running = False
             os.system("cls")
             
@@ -47,7 +51,8 @@ def functions():
 1. ADD TASKS
 2. VIEW TASKS
 3. REMOVE TASKS
-4. Quit
+4. EDIT TASK
+5. Quit
 ----------    ----------            
           """)
 
