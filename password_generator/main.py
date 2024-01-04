@@ -5,7 +5,7 @@ import os
 
 def main():
     #main part of the program where the magic happens :)
-
+    os.system('cls')
     possible_chars = characters()
     f = pyfiglet.figlet_format("Password Generator", font="slant")
     print(f)
